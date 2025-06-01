@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[Kryptex]</title>
+    <link
+      rel="shortcut icon"
+      href="https://png.pngtree.com/png-vector/20230901/ourmid/pngtree-mythological-greek-logo-design-with-greek-gods-outline-icon-vector-png-image_7026593.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="slabo-27px-regular">Da'Vinci [Kryptex]</h1>
+      </div>
+      <div class="configuration">
+        <p class="info">(Debes colocar un numero entre 1 a 26)</p>
+        <input type="number" id="inputNumber" placeholder="0" />
+        <p class="info-error" id="info-error" hidden>
+          <span class="material-symbols-outlined"> error </span>
+          Debe colocar un numero o Excediste del numero 26.
+        </p>
+      </div>
+
+      <div class="text-boxes">
+        <div class="in">
+          <h2>Text In</h2>
+          <textarea
+            disabled
+            id="textBox1"
+            placeholder="Escribe tu mensaje aquí..."
+          ></textarea>
+        </div>
+        <div class="out">
+          <div class="flex">
+            <h2>Text Out</h2>
+            <div>
+              <button id="copy" onclick="clearText()">
+                <span class="material-symbols-outlined">
+                  cleaning_services
+                </span>
+              </button>
+              <button id="copy" onclick="copyText()">
+                <span class="material-symbols-outlined"> content_copy </span>
+              </button>
+            </div>
+          </div>
+          <textarea
+            disabled
+            id="textBox2"
+            placeholder="Aquí aparecera tu mensaje encriptado..."
+          ></textarea>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <img
+        width="180"
+        height="180"
+        src="https://png.pngtree.com/png-vector/20230901/ourmid/pngtree-mythological-greek-logo-design-with-greek-gods-outline-icon-vector-png-image_7026593.png"
+        alt=""
+      />
+      <div>
+        <p class="description">
+          Este es una herramienta disenada por el mismisimo Leonardo Da' Vinci
+          para encriptar y desencriptar texto usando el cifrado de Vigenère.
+        </p>
+        <p>
+          De esta manera, puedes ocultar información sensible o simplemente
+          divertirte con la codificación de texto.
+        </p>
+      </div>
+      <p class="footer-text">Hecho por @MiguelAC con amor y dedicación.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+<!-- Logos de Davinci Kryptex: -->
+<!-- https://png.pngtree.com/png-vector/20230901/ourmid/pngtree-mathematical-polynomials-diagram-vector-png-image_7026592.png -->
+<!-- https://cdn3.iconfinder.com/data/icons/celebrity-2/100/Leonardo-DaVinci-Artist-Celebrity-Pixel-512.png -->
