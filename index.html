@@ -21,6 +21,10 @@
         <h1 class="slabo-27px-regular">Da'Vinci [Kryptex]</h1>
       </div>
       <div class="configuration">
+        <p class="info">
+          Para desencriptar debes colocar "0" como numero, y el mensaje en la
+          caja "Text Out" y luego clicar en el boton.
+        </p>
         <p class="info">(Debes colocar un numero entre 1 a 26)</p>
         <input type="number" id="inputNumber" placeholder="0" />
         <p class="info-error" id="info-error" hidden>
@@ -31,7 +35,7 @@
 
       <div class="text-boxes">
         <div class="in">
-          <h2>Text In</h2>
+          <h2 class="Title-box1">Text In</h2>
           <textarea
             disabled
             id="textBox1"
@@ -40,8 +44,11 @@
         </div>
         <div class="out">
           <div class="flex">
-            <h2>Text Out</h2>
+            <h2 class="Title-box2">Text Out</h2>
             <div>
+              <button id="copy" onclick="decryptText()">
+                <span class="material-symbols-outlined"> cached </span>
+              </button>
               <button id="copy" onclick="clearText()">
                 <span class="material-symbols-outlined">
                   cleaning_services
